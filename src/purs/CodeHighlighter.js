@@ -1,6 +1,8 @@
 // src/CodeHighlighter.js
 "use strict";
 
+require("./someJavascript.js")
+
 // Unbabelified version because I can't figure out how to integrate Babel with Pulp build workflow :(
 var _prismCore = _interopRequireDefault(require("prismjs/components/prism-core"));
 

@@ -3,11 +3,10 @@ An attempt at showcasing how Engineers can use Functional Programming to solve r
 
 ## Getting started
 ```
-npm install
-bower install
+spago install
 ```
 
 ## Building
 ```
-npm run build
+spago build
 ```

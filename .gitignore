@@ -1,5 +1,18 @@
+# From Spago
 /bower_components/
 /node_modules/
+/.pulp-cache/
 /output/
-/dist/app.js
+/generated-docs/
+/.psc-package/
+/.psc*
+/.purs*
+/.psa*
+/.spago
+
+# From ParcelJS
+/.cache/
+/dist/
+
+# Project specific
 /.vscode/
