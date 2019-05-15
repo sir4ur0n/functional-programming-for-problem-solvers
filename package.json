@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "build": "spago bundle --to dist/app.js && parcel build --public-url ./ --out-dir dist/ assets/index.html",
-    "watch": "pulp -w browserify --to dist/app.js",
-    "watch-fast": "webpack --mode=development --entry ./entry.js --output-path ./dist --output-filename app.js --progress --watch"
+    "build-production": "spago bundle --to dist/app.js && parcel build --public-url ./ index.html",
+    "watch-ps": "spago bundle --to dist/app.js --watch",
+    "watch-js": "parcel --no-hmr --public-url ./ index.html"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
@@ -13,11 +13,8 @@
     "babelify": "^10.0.0",
     "cssnano": "^4.1.10",
     "parcel-bundler": "^1.12.3",
-    "pulp": "^12.3.0",
     "purescript": "^0.12.0",
-    "purescript-psa": "^0.7.2",
-    "webpack": "^4.16.2",
-    "webpack-cli": "^3.1.0"
+    "purescript-psa": "^0.7.2"
   },
   "dependencies": {
     "prismjs": "^1.16.0"

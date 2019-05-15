@@ -57,5 +57,5 @@ rawComponent =
         Nothing -> pure unit
         Just el -> do
         --   html <- H.gets _.html
-          H.liftEffect $ highlight el "java" "List<String> hey = new ArrayList<>();"
-          -- H.liftEffect $ highlight el "haskell" "foo :: Int -> [Int]\nfoo x = let result = x ++ [42] in result"
+          -- H.liftEffect $ highlight el "java" "List<String> hey = new ArrayList<>();"
+          H.liftEffect $ highlight el "haskell" "foo :: Int -> [Int]\nfoo x = let result = x ++ [42] in result"
